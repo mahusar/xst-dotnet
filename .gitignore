@@ -1,0 +1,29 @@
+# Build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+*.user
+*.suo
+*.userprefs
+
+# Packages
+*.nupkg
+*.snupkg
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+
+# Test results
+[Tt]est[Rr]esult*/
+coverage*.xml
+*.coverage
+
+# Local RPC credentials, never commit these
+appsettings.Local.json
+*.local.env
+secrets.json

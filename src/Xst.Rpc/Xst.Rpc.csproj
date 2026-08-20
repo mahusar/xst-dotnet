@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>Xst.Rpc</AssemblyName>
+    <RootNamespace>Xst.Rpc</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Xst.Rpc</PackageId>
+    <Version>0.1.0-alpha</Version>
+    <Authors>mahusar</Authors>
+    <Description>JSON-RPC client for the Stealth (XST) daemon. Decimal-safe, async, netstandard2.0.</Description>
+    <PackageTags>stealth;xst;blockchain;rpc;cryptocurrency</PackageTags>
+    <RepositoryUrl>https://github.com/mahusar/xst-dotnet</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>Xst.Rpc.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>
